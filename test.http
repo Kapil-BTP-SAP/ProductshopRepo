@@ -1,7 +1,7 @@
 
 
 # ShareBuyBack
-GET http://localhost:4004/odata/v4/shopping-app/ShareBuyBack
+#GET http://localhost:4004/odata/v4/shopping-app/ShareBuyBack
 
 #StockMarket
 GET http://localhost:4004/odata/v4/shopping-app/Stockmarket

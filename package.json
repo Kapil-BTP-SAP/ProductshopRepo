@@ -5,10 +5,21 @@
     "@sap/cds": "^9"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2"
+    "@cap-js/sqlite": "^2",
+    "cds-plugin-ui5": "^0.13.0"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-tradingappname": "cds watch --open tradingappname/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-buyback": "cds watch --open buyback/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-buybackapp": "cds watch --open buybackapp/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
-  "private": true
+  "private": true,
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/tradingappname",
+    "app/buybackapp"
+  ]
 }

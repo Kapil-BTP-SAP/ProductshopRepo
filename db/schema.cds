@@ -1,19 +1,29 @@
 namespace sap.cap.shoppingApp;
 
-entity Stockmarket {
-        name       : String;
-        company    : String;
-        category   : String;
-    key id         : Integer;
-        
-        
+type Innvestment {
+    Stockvalue : Integer;
+    Stoploss   : Integer;
 }
 
-entity ShareBuyBack {
+aspect carbonemission 
+{
+    emission : Integer;
+    rating: String;
+}
+
+entity Stockmarket : carbonemission {
+    key id       : Integer;
+        name     : String;
+        company  : String;
+        category : String;
+        cost     : Innvestment;
+}
+
+entity ShareBuyBack : carbonemission {
     key ID         : Integer;
         Name       : String(100);
         Company    : String(100);
-        Category   : String ;
+        Category   : String;
         Stockvalue : Integer;
         Stoploss   : Integer;
 }

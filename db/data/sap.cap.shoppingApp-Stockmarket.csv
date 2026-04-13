@@ -1,4 +1,4 @@
-id,name,company,category
-1,TCS.TCSC,IT
-2,CDSL,CDSLC,Broker
-3,BEL,BELC,Defense
+id,name,company,category,cost_Stockvalue,cost_Stoploss
+1,TCS,TCSC,IT,3300,2900
+2,CDSL,CDSLC,Broker,2900,2500
+3,BEL,BEL,Defense,250,220
